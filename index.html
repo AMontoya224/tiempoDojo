@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Weather Forecast
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Island+Moments&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <h1 class="nav-title">
+                DojoWeather
+            </h1>
+            <ul class="nav-links">
+                <li>
+                    <a class="ciudad" href="#" id="burbank" onclick="alerta()">Burbank</a>
+                </li>
+                <li>
+                    <a class="ciudad" href="#" id="chicago" onclick="alerta()">Chicago</a>
+                </li>
+                <li>
+                    <a class="ciudad" href="#" id="dallas" onclick="alerta()">Dallas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-1">
+            <h2 class="nombretemperatura">
+                San Jose
+            </h2>
+            <label class="showtemperatura">show temperature in </label>
+            <select class="botomtemperatura" onchange="escogertemperatura(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+        <div class="contenedor-2">
+            <div class="contenedor-3">
+                <p class="dia">
+                    Today
+                </p>
+                <img src="./Images/some_rain.png" class="figura">
+                <p class="descripcion">
+                    some rain
+                </p>
+                <div class="contenedor-4">
+                    <p class="alta" id="alta1">
+                        24°
+                    </p>
+                    <p class="baja" id="baja1">
+                        18°
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-3">
+                <p class="dia">
+                    Tomorrow
+                </p>
+                <img src="./Images/some_sun.png" class="figura">
+                <p class="descripcion">
+                    some sun
+                </p>
+                <div class="contenedor-4">
+                    <p class="alta" id="alta2">
+                        27°
+                    </p>
+                    <p class="baja" id="baja2">
+                        19°
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-3">
+                <p class="dia">
+                    Friday
+                </p>
+                <img src="./Images/some_clouds.png" class="figura">
+                <p class="descripcion">
+                    some clouds
+                </p>
+                <div class="contenedor-4">
+                    <p class="alta" id="alta3">
+                        21°
+                    </p>
+                    <p class="baja" id="baja3">
+                        16°
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-3">
+                <p class="dia">
+                    Saturday
+                </p>
+                <img src="./Images/some_sun.png" class="figura">
+                <p class="descripcion">
+                    some sun
+                </p>
+                <div class="contenedor-4">
+                    <p class="alta" id="alta4">
+                        26°
+                    </p>
+                    <p class="baja" id="baja4">
+                        21°
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cookie" id="cookie">
+            <img src="./Images/cookie.png" class="cookie-foto">
+            <div class="cookie-1">
+                <p class="cookie-tittle">
+                    Stop! Cookie time
+                </p>
+                <p class="cookie-cuerpo">
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media feactures and to analyse our traffic. <span>Read more...</span>
+                </p>
+            </div>
+            <button class="cookie-boton" id="cookie" onclick="remove()">I Accept</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
